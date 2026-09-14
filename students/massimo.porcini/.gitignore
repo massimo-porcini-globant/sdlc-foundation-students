@@ -1,0 +1,11 @@
+# Harbor skills are confidential Globant material - keep them out of git (session 0).
+# These patterns cover the paths where Kilo and Cline install them inside your folder:
+.kilocode/rules/g-e-*/
+.clinerules/rules/g-e-*/
+# In session 4 you version the ONE harbor skill you deliberately modify by adding
+# an exception here, for example:
+# !.kilocode/rules/g-e-coding/
+
+# OS noise
+.DS_Store
+Thumbs.db
