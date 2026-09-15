@@ -4,7 +4,7 @@
 **Globant username:** massimo.porcini
 **CLI assistant:** <CODA>
 **Model:** <GLM-5.3-Flash>
-**Chosen stack:** <Java 21 + SpringBoot 3.4.0 + Spring Boot Testing with JUnit 5, Mockito & Testcontainers + SQLLite>
+**Chosen stack:** Java 21 + SpringBoot 3.4.0 + Spring Boot Testing with JUnit 5, Mockito & SQLLite (JDBC)
 **Start date:** <2026-09-14>
 
 ---
@@ -25,14 +25,18 @@
 
 ## Session 1 — SDD: foundations and architecture
 
-- [ ] Can explain SDD and why it matters when an agent does the implementation
-- [ ] Reviewed the SDD framework landscape (Spec Kit, Kiro, Tessl)
-- [ ] `asd-create` run against your Project Brief, producing a complete ASD
-- [ ] ASD reviewed section by section; every `[TBD]` resolved or knowingly deferred
-- [ ] ASD committed and versioned (the `.globant-skills-docs/asd/` folder with its `ASD.md` index) with an initial version marker
-- [ ] Tag `<your.username>/s1` created and pushed (`git push --follow-tags`)
+- [x] Can explain SDD and why it matters when an agent does the implementation
+- [x] Reviewed the SDD framework landscape (Spec Kit, Kiro, Tessl)
+- [x] `asd-create` run against your Project Brief, producing a complete ASD
+- [x] ASD reviewed section by section; every `[TBD]` resolved or knowingly deferred
+- [x] ASD committed and versioned (the `.globant-skills-docs/asd/` folder with its `ASD.md` index) with an initial version marker
+- [x] Tag `<your.username>/s1` created and pushed (`git push --follow-tags`)
 
 **Notes:**
+
+- ASD built section by section with the `g-e-asd-create` skill; each section confirmed interactively.
+- Key decisions formalized: REST API + Swagger UI (no custom UI), SQLite via JDBC (Testcontainers dropped — CONCERN-002), monovaluta EUR with BigDecimal, TAN + half-up rounding with residual on final installment, 6 PBCs modular monolith, three-state ImportResult (accepted/rejected/possible duplicate), ALERT entity with two independent alert mechanisms (statistical threshold + optional limit_amount).
+- 1 open item knowingly deferred: §6.3.2 per-PBC reference designs (Medium priority, tracked in ASD.md Open Items).
 
 ---
 

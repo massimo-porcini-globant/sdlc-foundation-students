@@ -7,8 +7,9 @@ explicitly: "close session N", "I finished session N", etc.):
 2. Update `progress.md` (at the root of my folder):
    - Mark the completed session's `- [ ]` checkboxes as `- [x]`.
    - If you find it useful, add notes in the "**Notes:**" section of that session.
-3. Commit with the prefix `[Agent/Model]: session N - session close`
-   and a message that lists what was built.
+3. Read [Agent] from file progress.md "CLI assistant" and [Model] from progress.md Model 
+   Commit with the prefix `[Agent/Model]: session N - session close`
+   and a message that lists what was built. 
 4. Push my branch `student/massimo.porcini` and create the milestone tag:
    `git tag -a massimo.porcini/sN -m "Session N complete"` and then
    `git push --follow-tags`.
